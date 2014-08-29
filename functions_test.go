@@ -11,20 +11,20 @@ import (
 func TestSumOfFirstNIntegers(t *testing.T) {
 	r := SumOfFirstNIntegers(100)
 	t.Logf("SumOfFirstIntegers(100) = %d", r)
-	if r != 4950 {
-		t.Errorf("SumOfFirstNIntegers(100) should equal 4950")
+	if r != 5050 {
+		t.Errorf("SumOfFirstNIntegers(100) should equal 5050")
 	}
 
 	r = SumOfFirstNIntegers(2456)
 	t.Logf("SumOfFirstIntegers(2456) = %d", r)
-	if r != 3014740 {
-		t.Errorf("SumOfFirstNIntegers(2456) should equal 3014740")
+	if r != 3017196 {
+		t.Errorf("SumOfFirstNIntegers(2456) should equal 3017196")
 	}
 
 	r = SumOfFirstNIntegers(10101)
 	t.Logf("SumOfFirstIntegers(10101) = %d", r)
-	if r != 51010050 {
-		t.Errorf("SumOfFirstNIntegers(10101) should equal 51010050")
+	if r != 51020151 {
+		t.Errorf("SumOfFirstNIntegers(10101) should equal 51020151")
 	}
 }
 
