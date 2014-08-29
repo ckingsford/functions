@@ -96,19 +96,19 @@ func TestPopSize(t *testing.T) {
 	fmt.Println("==== a=2 ====")
 	r := PopSize(2.0, 0.1, 20.0)
 	if math.Abs(r-0.5) > 1e-8 {
-		t.Errorf("PopSize(2.0, 0.1, 20.0) should equal 0.5903644833492417")
+		t.Errorf("PopSize(2.0, 0.1, 20.0) should equal 0.5")
 	}
 
 	fmt.Println("==== a=2.9 ====")
 	r = PopSize(2.9, 0.1, 20.0)
-	if math.Abs(r-0.6632328572131972) > 1e-8 {
-		t.Errorf("PopSize(2.9, 0.1, 20.0) should equal 0.6632328572131972")
+	if math.Abs(r-0.645941819757292) > 1e-8 {
+		t.Errorf("PopSize(2.9, 0.1, 20.0) should equal 0.645941819757292")
 	}
 
 	fmt.Println("==== a=4 ====")
 	r = PopSize(4.0, 0.1, 20.0)
-	if math.Abs(r-0.590364483349) > 1e-8 {
-		t.Errorf("PopSize(4.0, 0.1, 20.0) should equal 0.5903644833492417")
+	if math.Abs(r-0.8200138733909665) > 1e-8 {
+		t.Errorf("PopSize(4.0, 0.1, 20.0) should equal 0.8200138733909665")
 	}
 }
 
